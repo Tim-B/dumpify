@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>RadioTrack</title>
+	<link rel="stylesheet" href="sp://import/css/adam.css">
+	<link rel="stylesheet" href="main.css">
+	<script src="js/lib/jquery.js"></script>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="sp://import/css/core-light.css"> 
+	<link rel="stylesheet" href="sp://import/css/eve.css"> 
+	<link rel="stylesheet" href="sp://import/css/api.css">
+	<link rel="stylesheet" href="sp://import/css/shared.css">
+	<link rel="stylesheet" href="sp://import/css/reset.css">
+</head>
+<body>
+<div class="wrapper">
+	<h1 id="header">Dumpify</h1>
+	
+	<div id="intro" class="info_box">
+		<div class="info_box_head">Uhhh, what?</div>
+		<h4>Dumpify is a tool which records all the songs you have listented to, then let's you dump them to a playlist.</h4>
+		<h3>Why is this useful?</h3>
+		<p>
+			It's most useful when you want to save radio stations into a playlist. Say you like a particular radio station, but need to save your music offline so that you can listen to it on your phone on your way to work. Simply leave dumpify running while you listen to that station over the weekend, then dump all the songs to a playlist and make that playlist available offline on your phone.
+		</p>
+		<h3>Getting started</h3>
+		<p>
+			Using Dumpify is simple, all you have to do is press activate and Dumpify will start recording from the next song that starts playing. A list of tracks will then begin to appear below. Once you have enough songs, just click dump to playlist to create a new playlist from these tracks. You can remove tracks from your playlists once they have been dumped.
+		</p>
+		<button id="hide_intro" class="sp-button right sp-flat">Got It</button>
+		<div class="clear"></div>
+	</div>
+	<div class="info_box">
+		<div class="info_box_head">Activate</div>
+		<button id="activate_button" class="sp-button right sp-primary">Activate</button>
+		<div class="activate_text">Dumpify will only record your tracks when it is activated</div>
+		<div class="deactivate_text">Dumpify is active</div>
+	</div>
+
+	<div class="info_box">
+		<div class="info_box_head">Options</div>
+		<div id="created_playlist" class="green_notice">
+				Playlist created!
+		</div>
+		<div id="buttons">
+			<button id="dump_button" class="sp-button left">Dump to playlist</button>
+			<button id="clear_button" class="sp-button right">Clear list</button>
+			<div class="clear"></div>
+		</div>
+		<div id="dump_box">
+			<h3>Enter Playlist name</h3>
+			<input type="text" class="sp-text" id="playlist_name" name="playlist_name" />
+			<div class="clear"></div>
+			<button id="action_dump" class="sp-button right">Dump</button>
+			<button id="cancel_dump" class="sp-button right" style="margin-right: 10px;" >Cancel</button>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<div class="info_box">
+		<div class="info_box_head">Tracks</div>
+			<div id="tracklist"></div>
+			<div id="no_tracks" class="center">No tracks recorded yet! (try clicking next)</div>
+		<div class="clear"></div>
+	</div>
+	
+</div>
+</body>
+</html>

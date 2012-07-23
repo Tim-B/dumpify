@@ -1,0 +1,20 @@
+{
+	"BundleType": "Application",
+	"BundleIdentifier": "dumpify",
+	"VendorIdentifier": "com.galacticcode.",
+	"AppIcon": {
+		"36x18": "icon.png",
+		"64x64": "icon64.png",
+		"128x128": "icon128.png"
+	},
+	"AppName": {
+		"en": "Dumpify"
+	},
+	"AppDescription": {
+		"en": "Track the songs you have been listening to then dump them to a playlist."
+	},
+	"BundleVersion": "1.0.0",
+	"SupportedLanguages": [
+		"en"
+	]
+}
